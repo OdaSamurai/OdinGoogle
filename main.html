@@ -1,0 +1,229 @@
+<!Doctype HTML>
+
+<style>
+
+body {
+    margin: 0px;
+}
+
+/*Header bar, top of the page*/
+.mainHeadBar {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: right;
+    top: 6px;
+    margin: 10px;
+    position: fixed;
+    width: 98%;
+}
+#loginBtn {
+    background: #4285f4;
+    border: none;
+    font-size: 13px;
+    padding: 0 10px;
+    border: #4285f4 solid;
+    border-radius: 2px;
+    font-family: Arial, sans-serif;
+    color: #FFF;
+    line-height: 24px;
+    font-weight: bold;
+}
+#gglApps {
+    display: grid;
+    margin-right: 10px;
+    grid-template-columns: 4px 4px 4px;
+    grid-template-rows: 4px 4px 4px;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    justify-content: center;
+}
+.appsBtn {
+    background: #777;
+}
+
+/*Images and Gmail Buttons*/
+#headerBtn {
+    font-family: arial, sans-serif; 
+    font-size: 13px;
+    margin-right: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+#headerBtn:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+/*Body of the page*/
+.mainBody {
+    width: 100%;
+    display: table;
+    margin-top: 20vh;
+}
+
+#mainImg {
+    display: table;
+    margin: 0 auto;
+}
+
+#mainSearchBox {
+    border-radius: 30px;
+    margin: 5px auto;
+    display: table;
+    padding-left: 10px;
+    height: 30px;
+    font-size: 25px;
+    width: 29vw;
+}
+#mainSearchBox:focus{
+    box-shadow: 0 0 0 2pt rgba(100, 100, 100, 0.1);
+    outline: none;
+}
+
+#searchBtnDiv {
+    display: table;
+    margin: 0 auto;
+}
+
+#searchButtons {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: none;
+    background: #f2f2f2;
+    margin: 5px;
+    color: #5f6368;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+/*Footer of the page*/
+.countryFooter {
+    background: #f2f2f2;
+    bottom: 30px;
+    margin: 10px;
+    width: 100%;
+    margin-left: 0px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 15px;
+    line-height: 40px;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #d2d2d2;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.mainFooter {
+    background: #f2f2f2;
+    bottom: -10px;
+    margin: 10px;
+    width: 100%;
+    margin-left: 0px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: left;
+    font-size: 15px;
+    line-height: 40px;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #d2d2d2;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.rightFooter {
+    bottom: -10px;
+    right: -10px;
+    margin: 10px;
+    width: 20%;
+    margin-left: 0px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: right;
+    font-size: 15px;
+    line-height: 40px;
+    font-family: Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.footerText {
+    padding-left: 15px;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: underline #f2f2f2;
+}
+
+.rfooterText {
+    padding-right: 15px;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: underline #f2f2f2;
+}
+
+.footerText:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.rfooterText:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+</style>
+
+<head>
+</head>
+
+<body>
+<div class="mainHeadBar" style="align-items: center;">
+    <div>
+        <a id="headerBtn" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+    </div>
+    <div>
+        <a id="headerBtn" href="https://www.google.com.br/imghp?hl=pt-BR&tab=wi&ogbl">Imagens</a>
+    </div>
+    <div id="gglApps" style="align-content: center; padding-right: 10px;">
+        <div class="appsBtn"></div>
+        <div class="appsBtn"></div>
+        <div class="appsBtn"></div>
+        <div class="appsBtn"></div>
+        <div class="appsBtn"></div>
+        <div class="appsBtn"></div>
+        <div class="appsBtn"></div>
+        <div class="appsBtn"></div>
+        <div class="appsBtn"></div>
+    </div>
+    <a href="https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=https://www.google.com.br/"><button id="loginBtn">Fazer login</button></a>
+</div>
+<!--End of the header-->
+
+<div class="mainBody">
+        <img id="mainImg" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
+        <br>
+        <input id="mainSearchBox" type="text" size="60vw;">
+        <br>
+        <div id="searchBtnDiv">
+            <button id="searchButtons" type="button">Pesquisa Google</button>
+            <button id="searchButtons" type="button">Estou com Sorte</button>
+        </div>
+</div>
+
+<!--End of main content-->
+<div class="countryFooter">
+    <div class="footerText">Brasil</div>
+    </div>
+<div class="mainFooter">
+    <a href="https://www.google.com.br/intl/pt-BR_br/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"><div class="footerText">Publicidade</div></a>
+    <a href="https://www.google.com.br/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"><div class="footerText">Negócios</div></a>
+    <a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1"><div class="footerText">Sobre</div></a>
+    <a href="https://google.com/search/howsearchworks/?fg=1"><div class="footerText">Como funciona a Pesquisa</div></a>
+    <div class="rightFooter">
+        <a href="https://policies.google.com/privacy?fg=1"><div class="rfooterText">Privacidade</div></a>
+        <a href="https://policies.google.com/terms?fg=1"><div class="rfooterText">Termos</div></a>
+        <a href="https://policies.google.com/privacy?fg=1"><div class="rfooterText">Configurações</div></a>
+    </div>
+</div>
+</body>
