@@ -15,6 +15,7 @@ body {
     margin: 10px;
     position: fixed;
     width: 98%;
+    align-items: center;
 }
 #loginBtn {
     background: #4285f4;
@@ -184,13 +185,14 @@ body {
 </head>
 
 <body>
-<div class="mainHeadBar" style="align-items: center;">
-    <div>
+    <!--Top bar/Header start-->
+<div class="mainHeadBar">
+    <div> <!--Gmail link-->
         <a id="headerBtn" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
     </div>
-    <div>
+    <div> <!--Image search link-->
         <a id="headerBtn" href="https://www.google.com.br/imghp?hl=pt-BR&tab=wi&ogbl">Imagens</a>
-    </div>
+    </div> <!--Google Apps Button (Not functional)-->
     <div id="gglApps" style="align-content: center; padding-right: 10px;">
         <div class="appsBtn"></div>
         <div class="appsBtn"></div>
@@ -202,34 +204,39 @@ body {
         <div class="appsBtn"></div>
         <div class="appsBtn"></div>
     </div>
-    <a href="https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=https://www.google.com.br/"><button id="loginBtn">Fazer login</button></a>
+    <div> <!--Gmail Login Button-->
+        <a href="https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=https://www.google.com.br/"><button id="loginBtn">Fazer login</button></a>
+    </div>
 </div>
 <!--End of the header-->
 
+<!--Main content start-->
 <div class="mainBody">
-        <img id="mainImg" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
+        <img id="mainImg" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> <!--Google Logo-->
         <br>
-        <input id="mainSearchBox" type="text" size="60vw;" autofocus required>
+        <input id="mainSearchBox" type="text" size="60vw;" autofocus required> <!--Search Box-->
         <br>
-        <div id="searchBtnDiv">
+        <div id="searchBtnDiv"> <!--Search and I'm Lucky Buttons-->
             <button id="searchButtons" type="button">Pesquisa Google</button>
             <button id="searchButtons" type="button">Estou com Sorte</button>
         </div>
 </div>
-
 <!--End of main content-->
-<div class="countryFooter">
+
+<!--Footer start-->
+<div class="countryFooter"> <!--Country Footer-->
     <div id="countryFooterText">Brasil</div>
     </div>
-<div class="mainFooter">
+<div class="mainFooter"> <!--Main (left) footer-->
     <a href="https://www.google.com.br/intl/pt-BR_br/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"><div class="footerText">Publicidade</div></a>
     <a href="https://www.google.com.br/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"><div class="footerText">Negócios</div></a>
     <a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1"><div class="footerText">Sobre</div></a>
     <a href="https://google.com/search/howsearchworks/?fg=1"><div class="footerText">Como funciona a Pesquisa</div></a>
-    <div class="rightFooter">
+    <div class="rightFooter"> <!--Right part of the main footer-->
         <a href="https://policies.google.com/privacy?fg=1"><div class="rfooterText">Privacidade</div></a>
         <a href="https://policies.google.com/terms?fg=1"><div class="rfooterText">Termos</div></a>
         <a href="https://policies.google.com/privacy?fg=1"><div class="rfooterText">Configurações</div></a>
     </div>
 </div>
+<!--End of the footer-->
 </body>
