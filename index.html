@@ -9,7 +9,7 @@ body {
 /*Header bar, top of the page*/
 .mainHeadBar {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
     justify-content: right;
     top: 6px;
     margin: 10px;
@@ -30,16 +30,15 @@ body {
     font-weight: bold;
 }
 #gglApps {
-    display: grid;
     margin-right: 10px;
-    grid-template-columns: 4px 4px 4px;
-    grid-template-rows: 4px 4px 4px;
-    grid-row-gap: 2px;
-    grid-column-gap: 2px;
-    justify-content: center;
+    background-image: url(https://i.imgur.com/ECvXb6d.png);
+    height: 25px; 
+    width: 25px;
+    cursor: pointer;
 }
-.appsBtn {
-    background: #777;
+#gglApps:hover {
+    background-image: url(https://i.imgur.com/8bsLrnB.png);
+    cursor: pointer;
 }
 
 /*Images and Gmail Buttons*/
@@ -192,18 +191,8 @@ body {
     </div>
     <div> <!--Image search link-->
         <a id="headerBtn" href="https://www.google.com.br/imghp?hl=pt-BR&tab=wi&ogbl">Imagens</a>
-    </div> <!--Google Apps Button (Not functional)-->
-    <div id="gglApps" style="align-content: center; padding-right: 10px;">
-        <div class="appsBtn"></div>
-        <div class="appsBtn"></div>
-        <div class="appsBtn"></div>
-        <div class="appsBtn"></div>
-        <div class="appsBtn"></div>
-        <div class="appsBtn"></div>
-        <div class="appsBtn"></div>
-        <div class="appsBtn"></div>
-        <div class="appsBtn"></div>
-    </div>
+    </div> <!--Google Apps Button-->
+        <a href="https://www.google.com.br/intl/pt-BR/about/products?tab=wh"><div id="gglApps"></div></a>
     <div> <!--Gmail Login Button-->
         <a href="https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=https://www.google.com.br/"><button id="loginBtn">Fazer login</button></a>
     </div>
